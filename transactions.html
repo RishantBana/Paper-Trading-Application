@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions - Paper Trading App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Your Transaction History</h1>
+            <nav>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="transactions.html" class="nav-link">Transactions</a>
+            </nav>
+        </header>
+
+        <section class="transactions-section">
+            <h2>Your Transactions</h2>
+            <div class="transaction-controls">
+                <button onclick="sortTransactions()">Sort by Date</button>
+                <input type="text" id="transaction-search" placeholder="Search transactions" oninput="searchTransactions()">
+            </div>
+            <ul id="transactions-list"></ul>
+        </section>
+    </div>
+
+    <script src="transactions.js"></script>
+</body>
+</html>
